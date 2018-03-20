@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
+const port=process.env.PORT || 8082 
 
 app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(8082, () => console.log('Example app listening on port 8082!'))
+app.listen(port, () => console.log('Example app listening on port '+port+''))
